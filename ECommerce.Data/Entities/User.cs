@@ -22,5 +22,11 @@ namespace ECommerce.Data.Entities
         [Required]
         public bool Admin { get; set; }
 
+        public Guid? AutoLoginKey { get; set; }
+
+        public int TitleId { get; set; }
+
+        public virtual Title Title { get; set; }
+
     }
 }
