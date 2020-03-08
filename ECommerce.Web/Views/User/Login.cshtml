@@ -189,7 +189,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- end:: Page -->
     <!-- begin::Global Config(global config for global JS sciprts) -->
     <script>
-    var KTAppOptions = {
+        var KTAppOptions = {
             "colors": {
                 "state": {
                     "brand": "#716aca",
@@ -335,7 +335,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!--end::Page Scripts -->
 
 
-    <script src="~/js/page/User_Login.js?_dt=@DateTime.UtcNow.Ticks"></script>
+    @Html.Raw(ECommerce.Helper.ViewHelper.PageJavascript(ViewContext))
 </body>
 <!-- end::Body -->
 </html>
